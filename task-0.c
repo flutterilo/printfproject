@@ -42,7 +42,7 @@ int _printf(char const *format, ...)
 						write(1, &a, 1);
 						break;
 					case 's':
-						_loop_str(va_arg(ap, char *));
+						_loop_str(va_arg(go, char *));
 						break;
 					default:
 						write(1, &format[i], 1);
